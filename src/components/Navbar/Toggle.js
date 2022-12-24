@@ -2,7 +2,7 @@ import React from 'react';
 import { Form } from 'react-bootstrap';
 
 export default function Toggle() {
-  let dark = false;
+  let dark = true;
   const toggleDarkMode = () => {
     dark = !dark;
     const root = document.querySelector('body');
@@ -28,7 +28,7 @@ export default function Toggle() {
         id="custom-switch"
         label=""
         style={{ display: 'inline-block', margin: '0 0 0 7px' }}
-        value={dark}
+        defaultChecked="true"
         onChange={toggleDarkMode}
       />
       <i className="fa fa-moon-o" aria-hidden="true" style={{ display: 'inline', color: 'var(--secondary)' }} />

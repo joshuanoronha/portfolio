@@ -7,7 +7,6 @@ import Toggle from './Toggle';
 import './navbar.css';
 
 export default function MainNavbar() {
-  const darkMode = true;
   const variant = {
     initial: {
       opacity: 0,
@@ -26,7 +25,7 @@ export default function MainNavbar() {
       <Navbar id="navbar" expand="lg">
         <Navbar.Brand href="#home" id="brand"><Logo /></Navbar.Brand>
         <Nav.Item className="ml-auto">
-          <Toggle darkMode={darkMode} />
+          <Toggle />
         </Nav.Item>
       </Navbar>
     </motion.span>

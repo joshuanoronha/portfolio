@@ -1,12 +1,11 @@
 :root {
-    --primary: black;
-    --secondary: rgb(110, 110, 110);
-    --subsecondary: rgb(136, 146, 176);
-    --background: white;
-    --fontColor: #232323;
+    --primary: #8892b0;
+    --secondary: #aeafaf;
+    --subsecondary: #3a506b;
+    --background: #0b132b;
+    --fontColor: #ffffff;
     --border: #c0c0c049;
     color: var(--fontColor);
-    background-color: black;
 }
 
 body {

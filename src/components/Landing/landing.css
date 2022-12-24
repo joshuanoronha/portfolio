@@ -1,12 +1,12 @@
 #landing-container{
     padding: 2%;
-    margin:4% auto;
-    margin-top:6em;
+    margin:auto;
     margin-bottom: 12.5em;
-    height: max-content;
+    height: 85vh;
 }
 
 #preface {
+    margin-top: 10em;
     font-size: 1.1rem;
     font-family: Overpass Mono;
     color: var(--subsecondary);
@@ -41,6 +41,7 @@
         margin:0 auto;
         margin-top:1em;
         margin-bottom: 6em;
+        height: max-content;
     }
 
     #preface {
