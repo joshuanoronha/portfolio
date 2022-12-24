@@ -3,7 +3,7 @@ import { Form } from 'react-bootstrap';
 
 export default function Toggle() {
   let dark = false;
-  function toggleDarkMode() {
+  const toggleDarkMode = () => {
     dark = !dark;
     const root = document.querySelector('body');
     if (dark) {
@@ -19,7 +19,7 @@ export default function Toggle() {
       root.style.setProperty('--background', '#ffffff');
       root.style.setProperty('--fontColor', '#232323');
     }
-  }
+  };
   return (
     <div style={{ display: 'inline-block' }}>
       <i className="fa fa-sun-o" style={{ display: 'inline-block', color: 'var(--secondary)' }} aria-hidden="true" />
