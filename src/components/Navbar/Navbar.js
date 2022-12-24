@@ -7,7 +7,7 @@ import Toggle from './Toggle';
 import './navbar.css';
 
 export default function MainNavbar() {
-  const darkMode = false;
+  const darkMode = true;
   const variant = {
     initial: {
       opacity: 0,
