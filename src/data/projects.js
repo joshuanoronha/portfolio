@@ -24,7 +24,6 @@ export const projects = [{
   in Heroku. The application has features of searching, sorting, filtering and login`,
   tags: ['Node.js', 'Angular', 'MongoDB', 'Express'],
   codeLink: 'https://github.com/joshuanoronha/IMDB-Clone-Frontend',
-  projectLink: 'http://arcane-bastion-14913.herokuapp.com/movies'
 }, {
   name: "Portfolio Website",
   image: "web_asset",
