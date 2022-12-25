@@ -8,7 +8,7 @@ export default function Toggle() {
     const root = document.querySelector('body');
     if (dark) {
       root.style.setProperty('--primary', '#8892b0');
-      root.style.setProperty('--secondary', '#aeafaf');
+      root.style.setProperty('--secondary', '#989898');
       root.style.setProperty('--subsecondary', '#3a506b');
       root.style.setProperty('--background', '#0b132b');
       root.style.setProperty('--fontColor', '#ffffff');
@@ -16,7 +16,7 @@ export default function Toggle() {
       root.style.setProperty('--primary', '#8892b0');
       root.style.setProperty('--secondary', '#8892b0');
       root.style.setProperty('--subsecondary', '#8892b0');
-      root.style.setProperty('--background', '#ffffff');
+      root.style.setProperty('--background', '#f8f8f8');
       root.style.setProperty('--fontColor', '#232323');
     }
   };
