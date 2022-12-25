@@ -2,6 +2,7 @@ import React from 'react';
 import { Container } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 import Icon from '../BasicComponents/Icon';
+import { landing } from '../../data/landing';
 import './landing.css';
 
 function Landing() {
@@ -38,10 +39,13 @@ function Landing() {
     <Container id="landing-container" fluid="md">
       <motion.div variants={variant} initial="initial" animate="animate">
         <motion.div id="preface" variants={variant}>Hi, my name is</motion.div>
-        <motion.div id="title" variants={titleVariant} initial="initial" animate="animate">Joshua Noronha.</motion.div>
-        <motion.div id="subtitle" variants={variant}>I am a Full Stack Developer.</motion.div>
+        <motion.div id="title" variants={titleVariant} initial="initial" animate="animate">{landing.name}</motion.div>
+        <motion.div id="subtitle" variants={variant}>
+          I am a&nbsp;
+          {landing.role}
+        </motion.div>
         <motion.div id="title-text" variants={variant}>
-          I&apos;m a software engineer specializing in making enterprise level websites and backends
+          {landing.description}
         </motion.div>
         <motion.span variants={variant}>
           <div id="landing-icon-container" style={{ marginTop: '20px' }}>
