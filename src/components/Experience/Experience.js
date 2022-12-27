@@ -21,6 +21,7 @@ export default function Experience() {
               color: 'var(--secondary)',
               marginTop: '1.1em',
             }}
+            key={experience.period}
           >
             <div style={{ marginTop: '1.5em' }}>
               <span style={{ color: 'var(--fontColor)', fontSize: '1.2rem' }}>
@@ -41,7 +42,7 @@ export default function Experience() {
               <ul>
                 {
                   experience.description.map((item) => (
-                    <li>
+                    <li key={item.substring(0, 100)}>
                       {item}
                     </li>
                   ))
