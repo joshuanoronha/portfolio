@@ -12,8 +12,12 @@ body {
     background-color: #f9f3f3;
 }
 
+.container {
+    height: 100vh;
+}
+
 .hero-container {
-    padding: 100px;
+    padding: 60px 100px 40px 100px;
 }
 
 .text-container {
@@ -21,21 +25,35 @@ body {
     margin-top: 16px;
     margin-bottom: 26px;
 }
+
 a {
     text-decoration: none;
     color: white;
 }
-.button-primary {
+
+.button {
     cursor: pointer;
     padding: 16px 20px;
-    background-color: #333333;
-    color: white;
-    text-align: center;
     border-radius: 16px;
     font-size: 0.9em;
     font-weight: 700;
     letter-spacing: 0.8px;
+    margin: 12px;
 }
+
+.button-primary {
+    background-color: #333333;
+    border: 3px solid #333333;
+    color: white;
+    text-align: center;
+}
+
+.button-secondary {
+    border: 3px solid #333333;
+    color: #333333;
+    text-align: center;
+}
+
 h1 {
     font-size: 3em;
     font-weight: 600;
@@ -68,20 +86,23 @@ h3 {
 }
 
 .projects-container {
-    margin-top: 100px;
-    padding-top: 80px;
+    padding-top: 20px;
     background-color: white;
+    width: 100vw;
 }
 
 .projects {
     display: flex;
     flex-direction: row;
+    width: inherit;
 }
+
 .project {
-    padding: 100px;
+    padding: 20px;
     background-color: #f9f3f3;
     margin: 20px 40px;
     border-radius: 12px;
+    flex: 1 1 0px;
 }
 .icon {
     width: 25px;
@@ -93,7 +114,7 @@ link {
     text-decoration: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 850px) {
     .hero-container {
         padding: 20px;
         margin-top: 24px;
@@ -102,6 +123,10 @@ link {
     h1 {
         font-size: 2em;
         margin: 16px 0 0 0;
+    }
+
+    .container {
+        height: max-content;
     }
 
     h3 {
@@ -113,5 +138,12 @@ link {
 
     .icon {
         margin: 24px 10px 0px 10px;
+    }
+    .projects-container {
+        margin-top: 40px;
+    }
+    .projects {
+        display: flex;
+        flex-direction: column;
     }
 }
